@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <title>Главная</title>
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              }
+            };
+            </script>
+            <script id="MathJax-script" async
+              src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+            </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="Styles/style-main.css" charset='utf-8'>
@@ -25,6 +35,29 @@
             <a href="#">Link</a>
             <a href="#" class="right">Link</a>
           </div>
+
+          Решим таким методом соотношение ${f_0 = 1}$, ${ f_n = 2f_{n-1} + 1 }$.
+          Из соотношения получаем, что
+              \[
+              \sum\limits_{n=1}^{\infty} f_n z^n = 2\sum\limits_{n=1}^{\infty} f_{n-1} z^n + \sum\limits_{n=1}^{\infty} z^n.
+              \]
+          Перепишем через ${ G_f(z) = \sum_{n=0}^{\infty} f_n z^n }$:
+          <math>
+          \begin{aligned}
+              G_f(z) - f_0z^0 &= 2z\sum\limits_{n=1}^{\infty} f_{n-1} z^{n-1} + \sum\limits_{n=0}^{\infty} z^n - z^0, \\[3mm]
+              G_f(z) - 1 &= 2z\sum\limits_{n=0}^{\infty} f_{n} z^{n} + \frac{1}{1-z} - 1, \\[3mm]
+              G_f(z)  &= 2z G_f(z) + \frac{1}{1-z},
+          \end{aligned}
+            </math>
+          откуда
+              \[
+              G_f(z)(1-2z) = \frac{1}{1-z} \Rightarrow
+                  G_f(z) = \frac{1}{(1-z)(1-2z)} = \frac{2}{1 - 2 z} - \frac{1}{1 - z} = 
+                  \sum\limits_{n=0}^{\infty} \Bigl( 2^{n+1} - 1\Bigr)z^n.
+            \]
+          То есть, предположительно, ${ f_n = 2^{n+1} - 1 }$.
+          По индукции несложно проверить, что это так.
+          Ответ нужно проверять, потому что мы нигде не проверяли, что ряды, с которыми мы работаем, сходятся где-то, кроме ${ z = 0 }$, то есть мы могли получить и неправильный ответ.
 
     </body>
 </html>
