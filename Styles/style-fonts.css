@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/NotoSans/NotoSans-VF.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'NotoSerif';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/NotoSerif/NotoSerif-VF.woff2') format('woff2')
+}
