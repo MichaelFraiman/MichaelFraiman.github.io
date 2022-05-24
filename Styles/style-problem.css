@@ -1,5 +1,10 @@
 .problem {
     font-family: 'NotoSerif';
-    color:blueviolet;
-    /*font-weight: 500;*/
+    /*color:blueviolet;*/
+    font-weight: 400;
+    margin-top: 2ex;
+}
+
+.problemname {
+    font-weight: 900;
 }

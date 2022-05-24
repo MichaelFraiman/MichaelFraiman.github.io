@@ -16,6 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="Styles/style-main.css" charset='utf-8'>
         <link rel="stylesheet" type="text/css" href="Styles/style-fonts.css" charset='utf-8'>
+        <link rel="stylesheet" type="text/css" href="Styles/style-problem.css" charset='utf-8'>
     </head>
 
     <body>
@@ -90,9 +91,16 @@
             <div class="problem">
             <span class="problemname">Задача 19.3.</span>
              Составьте рекуррентные соотношения на следующие величины: 
-            <div class="list_questions">
-             \par \TT Число последовательностей из 1 и 2, сумма чисел в которой равна~$n$. \par \TT Число последовательностей длины~$n$ из 1 и 2, в которых нет двух идущих подряд единиц. \par \TT Число последовательностей из 1, 2 и 3, сумма чисел в которых равна~$n$. \par 
-            </div>
+            <ol>
+             
+             <li>
+             Число последовательностей из 1 и 2, сумма чисел в которой равна~$n$. 
+             <li>
+             Число последовательностей длины~$n$ из 1 и 2, в которых нет двух идущих подряд единиц. 
+             <li>
+             Число последовательностей из 1, 2 и 3, сумма чисел в которых равна~$n$. 
+             
+            </ol>
              
             </div>
             
@@ -111,9 +119,16 @@
             Докажите монотонность и ограниченность следующих последовательностей: 
             <div class="multicols">
              
-            <div class="list_questions">
-             \par \TT ${ x_0 = \sqrt {3} }$, ${ x_n = \sqrt { 3 + x_{n-1} } }$; \par \TT ${ y_0 = 2 }$, ${ y_n = \sqrt { 2 + \sqrt {y_{n-1}} } }$; \par \TT ${ z_0 = \sqrt {2} }$, ${ z_n = \sqrt {2z_{n-1}} }$. \par 
-            </div>
+            <ol>
+             
+             <li>
+             ${ x_0 = \sqrt {3} }$, ${ x_n = \sqrt { 3 + x_{n-1} } }$; 
+             <li>
+             ${ y_0 = 2 }$, ${ y_n = \sqrt { 2 + \sqrt {y_{n-1}} } }$; 
+             <li>
+             ${ z_0 = \sqrt {2} }$, ${ z_n = \sqrt {2z_{n-1}} }$. 
+             
+            </ol>
              
             </div>
              
@@ -124,9 +139,18 @@
             Найдите явную формулу для последовательностей. \textit {Указание: можно ввести такой оператор $\lambda $, что ${ x_n = \lambda ^n x_0 }$.} 
             <div class="multicols">
              
-            <div class="list_questions">
-             \par \TT ${ x_0 = 1 }$, ${ x_n = 2x_{n-1} }$; \par \TT ${ x_0 = 2 }$, ${ x_1 = 3 }$, ${ x_n = 5x_{n-1} - 6x_{n-2} }$; \par \TT ${ x_0 = 2 }$, ${ x_1 = 1 }$, ${ x_n = 2x_{n-1} + 3x_{n-2} }$; \par \TT ${ x_0 = 1 }$, ${ x_1 = 1 }$, ${ x_n = 2x_{n-1} - 2x_{n-2} }$. \par 
-            </div>
+            <ol>
+             
+             <li>
+             ${ x_0 = 1 }$, ${ x_n = 2x_{n-1} }$; 
+             <li>
+             ${ x_0 = 2 }$, ${ x_1 = 3 }$, ${ x_n = 5x_{n-1} - 6x_{n-2} }$; 
+             <li>
+             ${ x_0 = 2 }$, ${ x_1 = 1 }$, ${ x_n = 2x_{n-1} + 3x_{n-2} }$; 
+             <li>
+             ${ x_0 = 1 }$, ${ x_1 = 1 }$, ${ x_n = 2x_{n-1} - 2x_{n-2} }$. 
+             
+            </ol>
              
             </div>
              
@@ -139,14 +163,29 @@
             <div class="problem">
             <span class="problemname">Задача 19.8.П.</span>
              В комбинаторике есть важная последовательность чисел, называемая последовательностью \textit {чисел Каталана\footnote {Эже́н Шарль Катала́н (фр.~Eugène-Charles Catalan; 30 мая 1814 -- 14~февраля~1894) --- бельгийский математик.}.} $n$-м числом Каталана~$C_n$ называется количество разбиений выпуклого ${ (n+2) }$-угольника на треугольники непересекающимися диагоналями \textit {(см.~рис\footnote {Картинки взяты с~\url {https://en.wikipedia.org/wiki/Catalan_number}}.~\ref {2021-2022_10-11:recur:catalan_hex} "--- приведено 14 разбиений шестиугольника, то есть ${ C_4 = 14 }$).} 
-            <div class="list_questions">
-             \TT Докажите, что $C_n$ удовлетворяет рекуррентному соотношению \[ C_n = \sum _{k=0}^{n-1}C_kC_{n - 1 -k} \] 
-            </div>
+            <ol>
+             <li>
+             Докажите, что $C_n$ удовлетворяет рекуррентному соотношению \[ C_n = \sum _{k=0}^{n-1}C_kC_{n - 1 -k} \] 
+            </ol>
              Докажите, что в каждом из пунктов задано число, равное $n$-му числу Каталана~$C_n$ \textit {(см.~рис.~\ref {2021-2022_10-11:recur:catalan}).} 
-            <div class="list_questions">
-             \par \TT Правильных скобочных последовательностей длины $2n$. \textit {Это такие последовательности из $n$~открывающих и $n$~закрывающих скобок, что к каждой открывающей скобке есть парная ей закрывающая (идущая после неё). Например, \texttt {\upshape (()())} --- правильная, а~\texttt {\upshape ())(()} --- неправильная.} \par \TT Количество способов соединения $2n$~точек на окружности $n$~непересекающимися хордами. \par \TT Число способов пройти из левого нижнего угла доски ${n\times n}$ в правый верхний, \textit {\textbf {идя по линиям сетки,}} где каждый шаг делается либо на одну клетку вправо, либо вверх, причём нельзя подниматься выше главной диагонали \textit {(см.~рис.~\ref {2021-2022_10-11:recur:catalan_ways}).} \par \TT Число способов разрезать <<лесенку>> высоты~$n$ на $n$~прямоугольников \textit {(см.~рис.~\ref {2021-2022_10-11:recur:catalan_stairs}).} \par \TT Число бинарных деревьев с $n$ развилками \textit {(см.~рис.~\ref {2021-2022_10-11:recur:catalan_trees}).} \par 
-            </div>
-             \par \vspace *{\baselineskip } \begin {figure}[H] \begin {subfigure}[b]{0.45\textwidth } \centering \includegraphics [width=\linewidth ]{p/Comb/Catalan/800px-Catalan-Hexagons-example.png} \caption {Разбиение 6-угольника на треугольники} \label {2021-2022_10-11:recur:catalan_hex}\end {subfigure} \hspace *{1cm} \begin {subfigure}[b]{0.45\textwidth } \centering \includegraphics [width=\linewidth ]{p/Comb/Catalan/Catalan_number_4x4_grid_example.png} \caption {Маршруты на доске ${ 4\times 4 }$.} \label {2021-2022_10-11:recur:catalan_ways}\end {subfigure} \par \vspace *{\baselineskip } \begin {subfigure}[t]{0.45\textwidth } \centering \includegraphics [width=\linewidth ]{p/Comb/Catalan/2880px-Catalan_stairsteps_4.png} \caption {Разрезание лесенки высоты четыре на четыре прямоугольника.} \label {2021-2022_10-11:recur:catalan_stairs}\end {subfigure} \hspace *{1cm} \begin {subfigure}[t]{0.45\textwidth } \centering \includegraphics [width=\linewidth ]{p/Comb/Catalan/2880px-Catalan_4_leaves_binary_tree_example.png} \caption {Бинарные деревья с тремя развилками.} \label {2021-2022_10-11:recur:catalan_trees}\end {subfigure} \par \caption {Числа Каталана} \label {2021-2022_10-11:recur:catalan}\end {figure} 
+            <ol>
+             
+             <li>
+             Правильных скобочных последовательностей длины $2n$. \textit {Это такие последовательности из $n$~открывающих и $n$~закрывающих скобок, что к каждой открывающей скобке есть парная ей закрывающая (идущая после неё). Например, \texttt {\upshape (()())} --- правильная, а~\texttt {\upshape ())(()} --- неправильная.} 
+             <li>
+             Количество способов соединения $2n$~точек на окружности $n$~непересекающимися хордами. 
+             <li>
+             Число способов пройти из левого нижнего угла доски ${n\times n}$ в правый верхний, \textit {\textbf {идя по линиям сетки,}} где каждый шаг делается либо на одну клетку вправо, либо вверх, причём нельзя подниматься выше главной диагонали \textit {(см.~рис.~\ref {2021-2022_10-11:recur:catalan_ways}).} 
+             <li>
+             Число способов разрезать <<лесенку>> высоты~$n$ на $n$~прямоугольников \textit {(см.~рис.~\ref {2021-2022_10-11:recur:catalan_stairs}).} 
+             <li>
+             Число бинарных деревьев с $n$ развилками \textit {(см.~рис.~\ref {2021-2022_10-11:recur:catalan_trees}).} 
+             
+            </ol>
+             
+             \vspace *{\baselineskip } \begin {figure}[H] \begin {subfigure}[b]{0.45\textwidth } \centering \includegraphics [width=\linewidth ]{p/Comb/Catalan/800px-Catalan-Hexagons-example.png} \caption {Разбиение 6-угольника на треугольники} \label {2021-2022_10-11:recur:catalan_hex}\end {subfigure} \hspace *{1cm} \begin {subfigure}[b]{0.45\textwidth } \centering \includegraphics [width=\linewidth ]{p/Comb/Catalan/Catalan_number_4x4_grid_example.png} \caption {Маршруты на доске ${ 4\times 4 }$.} \label {2021-2022_10-11:recur:catalan_ways}\end {subfigure} 
+             \vspace *{\baselineskip } \begin {subfigure}[t]{0.45\textwidth } \centering \includegraphics [width=\linewidth ]{p/Comb/Catalan/2880px-Catalan_stairsteps_4.png} \caption {Разрезание лесенки высоты четыре на четыре прямоугольника.} \label {2021-2022_10-11:recur:catalan_stairs}\end {subfigure} \hspace *{1cm} \begin {subfigure}[t]{0.45\textwidth } \centering \includegraphics [width=\linewidth ]{p/Comb/Catalan/2880px-Catalan_4_leaves_binary_tree_example.png} \caption {Бинарные деревья с тремя развилками.} \label {2021-2022_10-11:recur:catalan_trees}\end {subfigure} 
+             \caption {Числа Каталана} \label {2021-2022_10-11:recur:catalan}\end {figure} 
             </div>
             
             </div>
@@ -162,9 +201,19 @@
              Найдите суммы следующих рядов 
             <div class="multicols">
              
-            <div class="list_questions">
-             \par \TT ${ \displaystyle \sum _{n=0}^\infty \frac {1}{2^n} }$; \par \TT ${ \displaystyle \sum _{n=1}^\infty \frac {1}{n(n+1)} }$; \par \TT ${ \displaystyle \sum _{n=1}^\infty \frac {1}{n(n+2)} }$; \par \TT ${ \displaystyle \sum _{n=0}^\infty \frac {(-1)^n}{2^n} }$. \par \par 
-            </div>
+            <ol>
+             
+             <li>
+             ${ \displaystyle \sum _{n=0}^\infty \frac {1}{2^n} }$; 
+             <li>
+             ${ \displaystyle \sum _{n=1}^\infty \frac {1}{n(n+1)} }$; 
+             <li>
+             ${ \displaystyle \sum _{n=1}^\infty \frac {1}{n(n+2)} }$; 
+             <li>
+             ${ \displaystyle \sum _{n=0}^\infty \frac {(-1)^n}{2^n} }$. 
+             
+             
+            </ol>
              
             </div>
              
@@ -184,9 +233,36 @@
             Для данных последовательностей найдите их производящие функции, а для данных функций "--- соответствующие последовательности. \textit {Подумайте, где эти функции определены.} 
             <div class="multicols">
              
-            <div class="list_questions">
-             \par \TT ${ c_n = 1 }$; \par \TT ${ c_n = 1/2^n }$; \par \TT ${ c_n = 3^n }$; \par \TT ${ \displaystyle c_n = \binom {2022}{n} }$; \par \TT ${ \displaystyle \frac {1}{(1-z)} }$; \par \TT ${ \displaystyle \frac {1}{(1+z)} }$; \par \TT ${ \displaystyle \frac {1}{(2-z)^2} }$; \par \TT ${ c_n = n }$; \par \TT ${ c_n = n(n-1)(n-2) }$; \par \TT ${ c_n = \binomrep *{N}{n} }$;\footnote {${ \binomrep *{N}{n} }$ "--- это сочетания с повторениями, то есть ${\binom {N+n-1}{n}}$.} \par \TT $e^z$; \par \TT $\sin z$, $\cos z$ \par \TT $\sqrt {1+z}$ \par 
-            </div>
+            <ol>
+             
+             <li>
+             ${ c_n = 1 }$; 
+             <li>
+             ${ c_n = 1/2^n }$; 
+             <li>
+             ${ c_n = 3^n }$; 
+             <li>
+             ${ \displaystyle c_n = \binom {2022}{n} }$; 
+             <li>
+             ${ \displaystyle \frac {1}{(1-z)} }$; 
+             <li>
+             ${ \displaystyle \frac {1}{(1+z)} }$; 
+             <li>
+             ${ \displaystyle \frac {1}{(2-z)^2} }$; 
+             <li>
+             ${ c_n = n }$; 
+             <li>
+             ${ c_n = n(n-1)(n-2) }$; 
+             <li>
+             ${ c_n = \binomrep *{N}{n} }$;\footnote {${ \binomrep *{N}{n} }$ "--- это сочетания с повторениями, то есть ${\binom {N+n-1}{n}}$.} 
+             <li>
+             $e^z$; 
+             <li>
+             $\sin z$, $\cos z$ 
+             <li>
+             $\sqrt {1+z}$ 
+             
+            </ol>
              
             </div>
              
@@ -220,9 +296,16 @@
             Используя утверждение~\ref {2021-2022_10-11:series:elemfrac}, разложите следующие функции в степенные ряды. 
             <div class="multicols">
              
-            <div class="list_questions">
-             \par \TT ${ \frac {1}{(1-z)(2-z)} }$; \par \TT ${ \frac {1}{(1-z)^2(2-z)} }$; \par \TT ${ \frac {x^5}{ (2-z)^2 (1-z) } }$. \par 
-            </div>
+            <ol>
+             
+             <li>
+             ${ \frac {1}{(1-z)(2-z)} }$; 
+             <li>
+             ${ \frac {1}{(1-z)^2(2-z)} }$; 
+             <li>
+             ${ \frac {x^5}{ (2-z)^2 (1-z) } }$. 
+             
+            </ol>
              
             </div>
              
@@ -241,9 +324,18 @@
             Решите методом производящих функций (даже если по-другому проще): 
             <div class="multicols">
              \RaggedRight 
-            <div class="list_questions">
-             \par \TT ${ x_0 = 1,\; x_n = x_{n-1} }$; \par \TT ${ y_0 = 1,\; y_1 = 2,\; y_n = 2y_{n-1} + 3y_{n-2} }$; \par \TT \!${\begin {multlined}[t][\linewidth ] a_0 = a_1 = 0,\; a_2 = 1,\\[1mm] a_n = 3a_{n-1} + 6a_{n-2} - 8a_{n-3} + n; \end {multlined}}$ \par \TT ${ \displaystyle b_1 = b_2 = 0 }, {\displaystyle b_{n+1} - b_{n-1} = \frac {1}{n^2 - 1} }$. \par 
-            </div>
+            <ol>
+             
+             <li>
+             ${ x_0 = 1,\; x_n = x_{n-1} }$; 
+             <li>
+             ${ y_0 = 1,\; y_1 = 2,\; y_n = 2y_{n-1} + 3y_{n-2} }$; 
+             <li>
+             \!${\begin {multlined}[t][\linewidth ] a_0 = a_1 = 0,\; a_2 = 1,\\[1mm] a_n = 3a_{n-1} + 6a_{n-2} - 8a_{n-3} + n; \end {multlined}}$ 
+             <li>
+             ${ \displaystyle b_1 = b_2 = 0 }, {\displaystyle b_{n+1} - b_{n-1} = \frac {1}{n^2 - 1} }$. 
+             
+            </ol>
              
             </div>
              
@@ -254,9 +346,16 @@
             С помощью производящих функций найдите следующие суммы 
             <div class="multicols">
              
-            <div class="list_questions">
-             \par \TT ${ \displaystyle \sum \limits _{k=0}^{n} k }$; \par \TT ${ \displaystyle \sum \limits _{k=0}^{n} k^3 }$; \par \TT ${ \displaystyle \sum \limits _{n=0}^{\infty } \frac {n^3}{2^n} }$. \par 
-            </div>
+            <ol>
+             
+             <li>
+             ${ \displaystyle \sum \limits _{k=0}^{n} k }$; 
+             <li>
+             ${ \displaystyle \sum \limits _{k=0}^{n} k^3 }$; 
+             <li>
+             ${ \displaystyle \sum \limits _{n=0}^{\infty } \frac {n^3}{2^n} }$. 
+             
+            </ol>
              
             </div>
              
@@ -271,9 +370,16 @@
             Иногда обычная производящая функция может не подойти, потому что полученный ряд может не сойтись. Например, в п.~\ref {2021-2022_10-11:recur:fact} этого задания мы должны будем получить~${ G(z) = \sum n!z^n }$, но этот ряд нигде не сходится. Вместо этого можно рассмотреть, например, экспоненциальную производящую функцию: \[ G^{\exp }_c (z) \coloneq \sum \limits _{n = 0}^{ \infty } \frac {c_n}{n!} z^n. \] Получите экспоненциальные производящие функции для следующих последовательностей. Попробуйте найти явную формулу для членов последовательности. 
             <div class="multicols">
              
-            <div class="list_questions">
-             \par \TT \label {2021-2022_10-11:recur:fact} ${ x_0 = 1,\; x_n = n x_{n-1} }$; \par \TT ${ y_0 = 0,\; y_n = ny_{n-1} + 1 }$; \par \TT ${ a_0 = 0,\; 3a_{n+1} = 2(n+1)a_n + 5\cdot (n+1)! }$; \par 
-            </div>
+            <ol>
+             
+             <li>
+             \label {2021-2022_10-11:recur:fact} ${ x_0 = 1,\; x_n = n x_{n-1} }$; 
+             <li>
+             ${ y_0 = 0,\; y_n = ny_{n-1} + 1 }$; 
+             <li>
+             ${ a_0 = 0,\; 3a_{n+1} = 2(n+1)a_n + 5\cdot (n+1)! }$; 
+             
+            </ol>
              
             </div>
              
@@ -282,18 +388,35 @@
             <div class="problem">
             <span class="problemname">Задача 19¾.4.</span>
             Напомним, что числа Каталана задаются как ${\displaystyle C_0 = 1, \enspace C_n = \sum \limits _{k=0}^{n-1}C_k C_{n-1-k}. }$ Теперь получим явную формулу: 
-            <div class="list_questions">
-             \par \TT Выпишите уравнение на производящую функцию $G_C$. \par \TT Если вы всё правильно сделали, получилось квадратное уравнение. Решите его и выберите из двух решений подходящее. \par \TT Теперь получите явную формулу: ${\displaystyle G_C(z) = \sum _{n=0}^{\infty } \frac {1}{n+1} \binom {2n}{n} z^n. }$ \par 
-            </div>
-             \par 
+            <ol>
+             
+             <li>
+             Выпишите уравнение на производящую функцию $G_C$. 
+             <li>
+             Если вы всё правильно сделали, получилось квадратное уравнение. Решите его и выберите из двух решений подходящее. 
+             <li>
+             Теперь получите явную формулу: ${\displaystyle G_C(z) = \sum _{n=0}^{\infty } \frac {1}{n+1} \binom {2n}{n} z^n. }$ 
+             
+            </ol>
+             
+             
             </div>
             
             <div class="problem">
             <span class="problemname">Задача 19¾.5.</span>
             \textit {Числом Белла $B_n$} называется число способов разбить $n$"=элементное множество на непустые подмножества. На рис.~\ref {2021-2022_10-11:comb:bell5} изображено разбиение 5-элементного множества, то есть~${ B_5 = 52 }$. 
-            <div class="list_questions">
-             \par \TT Докажите, что ${ \displaystyle B_{n+1} = \sum _{k=0}^n \binom {n}{k} B_n }$; \par \TT Докажите, что ${ \frac {d}{dz} G^{\exp }_B(z) = e^z G^{\exp }_B (z) }$; \par \TT Получите из последнего равенства ${ G^{\exp }_B (z) = e^{e^z-1} }$; \par \TT Выведите, что ${ \displaystyle B_n = \frac {1}{e} \sum \limits _{k=0}^{\infty } \frac {k^n}{k!} }$. \par 
-            </div>
+            <ol>
+             
+             <li>
+             Докажите, что ${ \displaystyle B_{n+1} = \sum _{k=0}^n \binom {n}{k} B_n }$; 
+             <li>
+             Докажите, что ${ \frac {d}{dz} G^{\exp }_B(z) = e^z G^{\exp }_B (z) }$; 
+             <li>
+             Получите из последнего равенства ${ G^{\exp }_B (z) = e^{e^z-1} }$; 
+             <li>
+             Выведите, что ${ \displaystyle B_n = \frac {1}{e} \sum \limits _{k=0}^{\infty } \frac {k^n}{k!} }$. 
+             
+            </ol>
              
             </div>
             
@@ -302,9 +425,16 @@
             Пусть $p(n)$ "--- количество разбиений числа $n$ на различные слагаемые (порядок не важен), а $l(n)$ "--- на нечётные. Докажите, что 
             <div class="multicols">
              
-            <div class="list_questions">
-             \par \TT ${ \displaystyle \sum \limits _{n=0}^{\infty } p(n) z^n = \prod \limits _{n=0}^{\infty } (1+z^n) }$; \par \TT ${ \displaystyle \sum \limits _{n=0}^{\infty } l(n) z^n = \prod \limits _{n=0}^{\infty } \frac {1}{ 1 - z^n } }$; \par \TT ${ \displaystyle p \equiv l }$. \par 
-            </div>
+            <ol>
+             
+             <li>
+             ${ \displaystyle \sum \limits _{n=0}^{\infty } p(n) z^n = \prod \limits _{n=0}^{\infty } (1+z^n) }$; 
+             <li>
+             ${ \displaystyle \sum \limits _{n=0}^{\infty } l(n) z^n = \prod \limits _{n=0}^{\infty } \frac {1}{ 1 - z^n } }$; 
+             <li>
+             ${ \displaystyle p \equiv l }$. 
+             
+            </ol>
              
             </div>
              
@@ -323,7 +453,10 @@
             </p>
             <div class="problem">
             <span class="problemname">Задача 19⅞.1.</span>
-            Пусть необходимо решить уравнение ${ f' = f }$ (равенство для всех аргументов), ${ f(0) = 2 }$ на луче ${ [0;+\infty ) }$ (то есть нужно найти все подходящие дифференцируемые функции). Рассмотрим достаточно малое~$h$. Тогда можно дискретно приблизить функцию последовательностью: ${ f_n \coloneq f(n\cdot h) }$. То есть мы будем рассматривать только значения в конечном числе точек вида~$nh$. \par Теперь подумаем, как приблизить производную. Один из методов следующий: \[ f'(nh) \coloneq \frac { f_{n+1} - f_{n-1} }{2h} \] в промежуточных точках, а в самой левой "--- ${ f'(0) = \frac {f_1 - f_0}{h} }$. \par \rr Покажите, что исходное ОДУ\footnote {обыкновенное дифференциальное уравнение} теперь можно записать как \[ f_{n+1} = 2h f_n + f_{n-1},\enspace f_1 = 2hf_0, \enspace f_0 = 2. \] \par \rr Решите это уравнение.\\ \rr Преобразуйте это решение для ${ h = 1 }$.\\ \rr Напишите программу, строящую решение уравнения на отрезке ${ [0;1] }$. Программа должна принимать на вход значение~$N$, решать его для ${ h = 1/N }$ и выдавать массив пар вида ${ (n, f(nh)) }$ для ${ n = 0,\dotsc ,N }$. 
+            Пусть необходимо решить уравнение ${ f' = f }$ (равенство для всех аргументов), ${ f(0) = 2 }$ на луче ${ [0;+\infty ) }$ (то есть нужно найти все подходящие дифференцируемые функции). Рассмотрим достаточно малое~$h$. Тогда можно дискретно приблизить функцию последовательностью: ${ f_n \coloneq f(n\cdot h) }$. То есть мы будем рассматривать только значения в конечном числе точек вида~$nh$. 
+             Теперь подумаем, как приблизить производную. Один из методов следующий: \[ f'(nh) \coloneq \frac { f_{n+1} - f_{n-1} }{2h} \] в промежуточных точках, а в самой левой "--- ${ f'(0) = \frac {f_1 - f_0}{h} }$. 
+             \rr Покажите, что исходное ОДУ\footnote {обыкновенное дифференциальное уравнение} теперь можно записать как \[ f_{n+1} = 2h f_n + f_{n-1},\enspace f_1 = 2hf_0, \enspace f_0 = 2. \] 
+             \rr Решите это уравнение.\\ \rr Преобразуйте это решение для ${ h = 1 }$.\\ \rr Напишите программу, строящую решение уравнения на отрезке ${ [0;1] }$. Программа должна принимать на вход значение~$N$, решать его для ${ h = 1/N }$ и выдавать массив пар вида ${ (n, f(nh)) }$ для ${ n = 0,\dotsc ,N }$. 
             </div>
             
             <div class="problem">
@@ -331,9 +464,14 @@
              Решите (любым методом) следующие рекуррентные соотношения. Какие дифференциальные уравнения они приближают? \textit {Попробуйте решить эти самые дифференциальные уравнения.} 
             <div class="multicols">
              
-            <div class="list_questions">
-             \par \TT ${ \displaystyle \frac {y_{n+1} - y_{n-1}}{2h} = -\lambda y_n }$; \par \TT ${ \displaystyle \frac { y_{n+1} - 2y_n + y_{n-1} }{h^2} = -\lambda y_n }$; \par 
-            </div>
+            <ol>
+             
+             <li>
+             ${ \displaystyle \frac {y_{n+1} - y_{n-1}}{2h} = -\lambda y_n }$; 
+             <li>
+             ${ \displaystyle \frac { y_{n+1} - 2y_n + y_{n-1} }{h^2} = -\lambda y_n }$; 
+             
+            </ol>
              
             </div>
              
